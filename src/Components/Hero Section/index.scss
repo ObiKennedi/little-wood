@@ -1,0 +1,48 @@
+.herosection{
+    margin-top: 100px;
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >div:first-child{
+        width: 45%;
+        text-align: start;
+        >div:first-child{
+            color: #000000;
+            font-size: 24px;
+            line-height: 23.33px;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        >h1{
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 46.9px;
+            color: #C5C550;
+        }
+        >div:nth-child(3){
+            color: #000000;
+            font-size: 14px;
+            font-weight: 200;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        >button{
+            width: 100px;
+            height: 40px;
+            background: #000000;
+            border: none;
+            margin: 20px 0;
+            >a{
+                color: #FFFFFF;
+                text-decoration: none;
+                font-size: 14px;
+            }
+        }
+    }
+    >div:last-child{
+        width: 44%;
+        >img{
+            width: 100%;
+        }
+    }
+}
