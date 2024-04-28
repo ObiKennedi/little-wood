@@ -1,0 +1,16 @@
+.our--services{
+    padding: 15px 83.33px;
+    background: #FFFFFF;
+    >h1{
+        font-size: 25px;
+        font-weight: 500;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 21.5px;
+    }
+    >div{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}

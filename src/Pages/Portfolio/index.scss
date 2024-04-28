@@ -1,0 +1,73 @@
+.portfolio{
+    margin-top: 150px;
+    background: #FFFFFF;
+    >div:first-child{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 83.33px;
+        >h1{
+            color: #C5C550;
+            font-size: 25px;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 21.5px;
+        }
+        >button{
+            width: 100px;
+            height: 40px;
+            background: #000000;
+            border: none;
+            margin: 20px 0;
+            >a{
+                color: #FFFFFF;
+                text-decoration: none;
+                font-size: 14px;
+            }
+        }
+    }
+    >div:last-child{
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        >div{
+            width: 200px;
+            height: 450px;
+            background: #D2FDFDDE;
+            padding: 20px 10px;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            word-wrap: break-word;
+            cursor: pointer;
+            >div:first-child{
+                width: 100px;
+                >img{
+                    width: 100%;
+                    border-radius: 100%;
+                }
+            }
+            >h1{
+                color: #C5C550;
+                font-size: 15px;
+                font-weight: 500;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                line-height: 21.5px;
+            }
+            >div:last-child{
+                text-align: start;
+                color: #000000;
+                font-size: 11px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 300;
+                line-height: 14.5px;
+            }
+        }
+        >div:hover{
+            border-bottom: #C5C550 solid 1px;
+        }
+    }
+}

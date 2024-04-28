@@ -1,0 +1,31 @@
+.about--us{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px  85px;
+    margin-top: 150px;
+    background:  #D2FDFDDE;
+    >div{
+        width: 47%;
+        >img{
+            width: 100%;
+        }
+        >h1{
+            font-size: 25px;
+            line-height: 24.3px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+            color: #C5C550;
+            >div{
+                text-align: start;
+                width: 90%;
+                margin: auto;
+                >p{
+                    font-size: 12px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    line-height: 11.5px;
+                }
+            }
+        }
+    }
+}

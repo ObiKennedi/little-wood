@@ -1,0 +1,35 @@
+.skill{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background: #D2FDFDDE;
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 12px;
+    >img{
+        width: 70px;
+    }
+    >div{
+        text-align: start;
+        >h1{
+            color: #C5C550;
+            font-size: 25px;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 21.5px;
+        }
+        >div{
+            color: #000000;
+            font-size: 13px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 300;
+            line-height: 14.5px;
+        }
+    }
+}
+.skill:hover{
+    border-bottom: #C5C550 solid 1px;
+}

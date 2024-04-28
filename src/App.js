@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import Home from './Pages/Home';
+import AboutUs from './Pages/About Us';
+import Portfolio from './Pages/Portfolio';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
           <Header/>
           <Routes>
             <Route path='/' element={<Home/>}/>
+            <Route path='/about--us' element={<AboutUs/>}/>
+            <Route path='/portfolio' element={<Portfolio/>}/>
           </Routes>
         </div>
       </Router>

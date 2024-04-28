@@ -1,0 +1,60 @@
+.contact--us{
+    padding: 15px 100px;
+    margin-top: 150px;
+    >div:first-child{
+        text-align: center;
+        padding: 12px;
+        >h1{
+            color: #C5C550;
+            font-size: 25px;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            line-height: 21.5px;
+        }
+        >div{
+            color: #000000;
+            font-size: 13px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 300;
+            line-height: 14.5px;
+        }
+    }
+    >form{
+        margin: auto;
+        width: 50%;
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >span{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 12px 0;
+                >label{
+                    font-size: 12px;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-weight: 100;
+                }
+                >input{
+                    width: 90%;
+                    height: 20px;
+                    border-radius: 12px;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    outline: none;
+                }
+            }
+        }
+        .message--container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+            >textarea{
+                width: 100%;
+            }
+        }
+    }
+}
