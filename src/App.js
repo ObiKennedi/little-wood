@@ -5,6 +5,9 @@ import Header from './Components/Header';
 import Home from './Pages/Home';
 import AboutUs from './Pages/About Us';
 import Portfolio from './Pages/Portfolio';
+import Testimonials from './Pages/Testimonials';
+import ContactUs from './Pages/Contact Us';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -13,10 +16,13 @@ function App() {
         <div>
           <Header/>
           <Routes>
-            <Route path='/' element={<Home/>}/>
+            <Route path='/' element={<Home/>}></Route>
             <Route path='/about--us' element={<AboutUs/>}/>
             <Route path='/portfolio' element={<Portfolio/>}/>
+            <Route path='/testimonials' element={<Testimonials/>}/>
+            <Route path='/contact--us' element={<ContactUs/>}/>
           </Routes>
+          <Footer/>
         </div>
       </Router>
     </div>

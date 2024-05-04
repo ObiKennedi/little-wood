@@ -5,6 +5,7 @@ import OurServices from "../../Components/Our Services";
 import AboutUs from "../About Us";
 import Portfolio from "../Portfolio";
 import ContactUs from "../Contact Us";
+import Testimonials from "../Testimonials";
 
 export default function Home(){
     return(
@@ -13,6 +14,7 @@ export default function Home(){
             <OurServices/>
             <AboutUs/>
             <Portfolio/>
+            <Testimonials/>
             <ContactUs/>
         </div>
     )

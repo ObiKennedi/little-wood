@@ -5,10 +5,7 @@ export default function Portfolio(){
     return(
         <div className="portfolio">
             <div>
-                <h1>Subsidiaries</h1>
-                <button>
-                    <a href="https://www.instagram.com/littlewood_global?igsh=YzljYTk1ODg3Zg==">Visit Our IG</a>
-                </button>   
+                <h1>Our Subsidiaries</h1>  
             </div>
             <div>
                 <div>

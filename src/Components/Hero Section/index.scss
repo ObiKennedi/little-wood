@@ -1,23 +1,39 @@
 .herosection{
-    padding: 15px 100px;
+    padding: 15px 75.7px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    @media (max-width:800px) {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: start;
+    }
     >div:first-child{
         width: 45%;
         text-align: start;
+        @media (max-width:800px) {
+            width: 100%;
+        }
         >div:first-child{
             color: #000000;
             font-size: 24px;
             line-height: 23.33px;
             font-weight: 500;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            @media (max-width:800px) {
+                font-size: 17px;
+            }
         }
         >h1{
             font-size: 50px;
             font-weight: 500;
             line-height: 46.9px;
             color: #C5C550;
+            @media (max-width:800px) {
+                font-size: 30px;
+            }
         }
         >div:nth-child(3){
             color: #000000;
@@ -39,9 +55,15 @@
         }
     }
     >div:last-child{
-        width: 44%;
+        width: 50%;
         >img{
             width: 100%;
+        }
+        @media (max-width:800px) {
+           width: 100%;
+           >img{
+            width: 95%;
+           }
         }
     }
 }

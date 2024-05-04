@@ -1,9 +1,10 @@
 .portfolio{
-    margin-top: 150px;
+    //margin-top: 150px;
     background: #FFFFFF;
+    @media (max-width: 500px) {
+      background: #D2FDFDDE;  
+    }
     >div:first-child{
-        display: flex;
-        justify-content: space-between;
         padding: 15px 83.33px;
         >h1{
             color: #C5C550;
@@ -12,24 +13,16 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             line-height: 21.5px;
         }
-        >button{
-            width: 100px;
-            height: 40px;
-            background: #000000;
-            border: none;
-            margin: 20px 0;
-            >a{
-                color: #FFFFFF;
-                text-decoration: none;
-                font-size: 14px;
-            }
-        }
     }
     >div:last-child{
         padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media (max-width:500px) {
+            padding: 5px 83.33px;
+            margin: auto;
+        }
         >div{
             width: 200px;
             height: 450px;
@@ -43,6 +36,9 @@
             border-radius: 20px;
             word-wrap: break-word;
             cursor: pointer;
+            @media (max-width:500px) {
+                background: #FFFFFF;
+            }
             >div:first-child{
                 width: 100px;
                 >img{
