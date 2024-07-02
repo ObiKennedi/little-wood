@@ -1,23 +1,33 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const cors = require('cors');
+require('dotenv').config();
+
 const app = express();
-const port = process.env.PORT || 3001; 
+const port = process.env.PORT || 3001;
+
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 app.use(express.json());
 
-app.post('/send-email', (req, res) => {
+app.post('/contact-us', (req, res) => {
     const { firstName, lastName, email, phoneNumber, message } = req.body;
 
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'ProtonMail',
         auth: {
-            user: 'littlewoodglobal@gmail.com',
-            pass: 'your-email-password',
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,
         },
     });
+
     const mailOptions = {
-        from: 'littlewoodglobal@gmail.com',
-        to: 'obikennedy05@gmail.com', 
+        from: process.env.EMAIL_USER,
+        to: 'obikennedy05@gmail.com',
         subject: 'New Contact Form Submission',
         text: `
             First Name: ${firstName}
